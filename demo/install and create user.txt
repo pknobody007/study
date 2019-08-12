@@ -1,0 +1,15 @@
+how to create user inside the oracle ;
+1) install oracle, 
+2) open cmd  and type below command to login into oracle database
+ 
+sqlplus "/as sysdba"
+3) create a new user inside oracle server. 
+
+ CREATE USER piyush IDENTIFIED BY google;
+4) grant all acees to user, 
+
+  grant all privileges to piyush;
+
+ # import Dump file into oracle: 
+
+imp system/mca6 FROMUSER=tour TOUSER=piyush file=E:\TourAndTravels\tour.dmp
